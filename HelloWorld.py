@@ -26,14 +26,15 @@ with col2:
     if st.button("Preview Video"):
         st.write("Video preview function goes here.")
         
-    # Display a progress bar
-    progress = st.progress(0.2)  # Example progress at 20%
-
-    if st.button("Process Video"):
-        st.write("Video processing function goes here.")
         
     if st.button("Show Output"):
         st.write("Output display function goes here.")
 
     if st.button("Download Output"):
         st.download_button("Download Processed Video", data="output.mp4", file_name="output.mp4", mime="video/mp4")
+  
+    # Display a progress bar
+    progress = st.progress(0.4)  # Example progress at 40%
+
+    if st.button("Process Video"):
+        st.write("Video processing function goes here.")
